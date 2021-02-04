@@ -1,0 +1,13 @@
+/* #LearningRoute {
+
+} */
+
+#LearningRoute .word{
+  display: inline-block;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#LearningRoute form label {
+  display: inline-block;
+}
