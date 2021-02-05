@@ -1,50 +1,53 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(136, 201, 245));;
-    border-bottom: 1px solid #0a253f;
-    margin-bottom: 3rem;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  header h1 a {
-    text-decoration: none;
-    color: #2d2d2d;
-  }
-  
-  header h1 a:hover {
-    color: #2d2d2d;
-  }
-  
-  header .UserControls {
-    text-align: right;
-  }
-  
-  header .UserName {
-    font-size: 1.1rem;
-    padding: 0.5rem;
-    display: inline-block;
-  
-  }
-  
-  header nav {
-    display: inline-block;
-  }
-  
-  header nav a {
-    color: #2d2d2d;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
-  
-  header nav a:hover {
-    color: #E26D5A;
-    background-color: #FCE2C4;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(235, 72, 172)
+  );
+  border-bottom: 1px solid #0a253f;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+header h1 a:hover {
+  color: #2d2d2d;
+}
+
+header .UserControls {
+  text-align: right;
+}
+
+header .UserName {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav a {
+  color: #2d2d2d;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  color: #e26d5a;
+  background-color: #fce2c4;
+}

@@ -21,8 +21,8 @@ class LoginRoute extends Component {
         <div className="DemoCredentials">
           <div className="AlignLeft">
             <ul>
-              <li>Demo username: <strong>Grader</strong></li>
-              <li>Demo password: <strong>Password1!</strong></li>
+              <li>Demo username: <strong>Demo</strong></li>
+              <li>Demo password: <strong>pass</strong></li>
             </ul>
           </div>
         </div>

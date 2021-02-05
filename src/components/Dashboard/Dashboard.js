@@ -55,7 +55,7 @@ class Dashboard extends Component {
     return (
       <section id="Dashboard">
 
-        <h2>German</h2>
+        <h2>Hebrew</h2>
 
         <p>Total correct answers: {this.context.language.total_score}</p>
 
