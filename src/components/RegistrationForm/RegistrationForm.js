@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { Input, Required, Label } from '../Form/Form'
+import UserContext from "../../contexts/UserContext"
 import AuthApiService from '../../services/auth-api-service'
 import Button from '../Button/Button'
 import './RegistrationForm.css'
@@ -17,7 +18,6 @@ class RegistrationForm extends Component {
   handleSubmit = async ev => {
     ev.preventDefault()
     const { name, username, password } = ev.target
-    try{
     await AuthApiService.postUser({
       name: name.value,
       username: username.value,
@@ -36,13 +36,13 @@ class RegistrationForm extends Component {
           username.value = "";
           password.value = "";
           this.context.processLogin(res.authToken);
+          this.props.history.push('/');
           
         })
         .catch((res) => {
           this.setState({ error: res.error });
         });
-        this.props.history.push('/');
-      } catch(e){ console.log(e)};
+      
   }
 
   componentDidMount() {
@@ -105,3 +105,4 @@ class RegistrationForm extends Component {
 }
 
 export default withRouter(RegistrationForm)
+RegistrationForm.contextType=UserContext;
