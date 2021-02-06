@@ -17,6 +17,7 @@ class RegistrationForm extends Component {
   handleSubmit = async ev => {
     ev.preventDefault()
     const { name, username, password } = ev.target
+    try{
     await AuthApiService.postUser({
       name: name.value,
       username: username.value,
@@ -35,11 +36,13 @@ class RegistrationForm extends Component {
           username.value = "";
           password.value = "";
           this.context.processLogin(res.authToken);
-          this.props.history.push('/');
+          
         })
         .catch((res) => {
           this.setState({ error: res.error });
         });
+        this.props.history.push('/');
+      } catch(e){ console.log(e)};
   }
 
   componentDidMount() {
